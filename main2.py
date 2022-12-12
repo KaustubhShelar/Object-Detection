@@ -404,39 +404,39 @@ def output(filename):
                         + ' sec', (0, 90), cv2.FONT_HERSHEY_SIMPLEX, .5, (0, 170, 0), 1)
 
             # displays images and transformations
-            cv2.imshow("countours", image)
-            cv2.moveWindow("countours", 0, 0)
+#             cv2.imshow("countours", image)
+#             cv2.moveWindow("countours", 0, 0)
 
-            cv2.imshow("fgmask", fgmask)
-            cv2.moveWindow("fgmask", int(width * ratio), 0)
+#             cv2.imshow("fgmask", fgmask)
+#             cv2.moveWindow("fgmask", int(width * ratio), 0)
 
-            cv2.imshow("closing", closing)
-            cv2.moveWindow("closing", width, 0)
+#             cv2.imshow("closing", closing)
+#             cv2.moveWindow("closing", width, 0)
 
-            cv2.imshow("opening", opening)
-            cv2.moveWindow("opening", 0, int(height * ratio))
+#             cv2.imshow("opening", opening)
+#             cv2.moveWindow("opening", 0, int(height * ratio))
 
-            cv2.imshow("dilation", dilation)
-            cv2.moveWindow("dilation", int(width * ratio), int(height * ratio))
+#             cv2.imshow("dilation", dilation)
+#             cv2.moveWindow("dilation", int(width * ratio), int(height * ratio))
 
-            cv2.imshow("binary", bins)
-            cv2.moveWindow("binary", width, int(height * ratio))
+#             cv2.imshow("binary", bins)
+#             cv2.moveWindow("binary", width, int(height * ratio))
 
             video.write(image)  # save the current image to video file from earlier
 
             # adds to framecount
             framenumber = framenumber + 1
 
-            k = cv2.waitKey(int(1000 / fps)) & 0xff  # int(1000/fps) is normal speed since waitkey is in ms
-            if k == 27:
-                break
+#             k = cv2.waitKey(int(1000 / fps)) & 0xff  # int(1000/fps) is normal speed since waitkey is in ms
+#             if k == 27:
+#                 break
 
         else:  # if video is finished then break loop
 
             break
 
     cap.release()
-    cv2.destroyAllWindows()
+#     cv2.destroyAllWindows()
 
     # saves dataframe to csv file for later analysis
     df.to_csv('traffic.csv', sep=',')
