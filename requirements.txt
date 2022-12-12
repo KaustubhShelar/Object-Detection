@@ -1,9 +1,7 @@
-opencv-contrib-python
-opencv-python
+opencv-contrib-python-headless
 numpy
 streamlit
 requests
 pandas
 moviepy
-opencv-python-headless
 streamlit-drawable-canvas
