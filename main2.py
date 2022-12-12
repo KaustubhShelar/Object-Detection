@@ -23,7 +23,7 @@ def main():
     </style>
     """
     st.write(font_css, unsafe_allow_html=True)
-    st.header("Computer Vision Project ")
+    st.header("Vehicle Detection, Counting and Classification System")
     filename = uploadVideo()
     print(filename)
     print("uploadVideo working")
