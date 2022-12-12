@@ -379,29 +379,29 @@ def output(filename):
             # Top left hand corner on-screen text
             cv2.rectangle(image, (0, 0), (250, 100), (255, 0, 0), -1)  # background rectangle for on-screen text
 
-            cv2.putText(image, "Cars in Area: " + str(currentcars), (0, 15), cv2.FONT_HERSHEY_SIMPLEX, .5, (0, 170, 0),
+            cv2.putText(image, "Cars in Area: " + str(currentcars), (0, 15), cv2.FONT_HERSHEY_SIMPLEX, .5, (0, 0, 0),
                         1)
 
             cv2.putText(image, "Cars Crossed Up: " + str(carscrossedup), (0, 30), cv2.FONT_HERSHEY_SIMPLEX, .5,
-                        (0, 170, 0),
+                        (0, 0, 0),
                         1)
 
             cv2.putText(image, "Cars Crossed Down: " + str(carscrosseddown), (0, 45), cv2.FONT_HERSHEY_SIMPLEX, .5,
-                        (0, 170, 0), 1)
+                        (0, 0, 0), 1)
 
             # cv2.putText(image, "Total Cars Detected: " + str(len(carids)), (0, 60), cv2.FONT_HERSHEY_SIMPLEX, .5,
             #             (0, 170, 0), 1)
             cv2.putText(image, "Total Cars Detected: " + str(carscrossedup + carscrosseddown), (0, 60),
                         cv2.FONT_HERSHEY_SIMPLEX, .5,
-                        (0, 170, 0), 1)
+                        (0, 0, 0), 1)
 
             cv2.putText(image, "Frame: " + str(framenumber) + ' of ' + str(frames_count), (0, 75),
                         cv2.FONT_HERSHEY_SIMPLEX,
-                        .5, (0, 170, 0), 1)
+                        .5, (0, 0, 0), 1)
 
             cv2.putText(image,
                         'Time: ' + str(round(framenumber / fps, 2)) + ' sec of ' + str(round(frames_count / fps, 2))
-                        + ' sec', (0, 90), cv2.FONT_HERSHEY_SIMPLEX, .5, (0, 170, 0), 1)
+                        + ' sec', (0, 90), cv2.FONT_HERSHEY_SIMPLEX, .5, (0, 0, 0), 1)
 
             # displays images and transformations
 #             cv2.imshow("countours", image)
